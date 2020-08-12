@@ -224,6 +224,7 @@ p {
   background: #262626;
   border-radius: 20px;
   height: 15px;
+  visibility: hidden;
   position: absolute;
   bottom: 25px;
   width: 70%;
