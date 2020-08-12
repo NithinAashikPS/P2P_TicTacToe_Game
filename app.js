@@ -9,6 +9,7 @@ app.set("view engine", "ejs");
 app.get("/game", (req, res) => {
     res.render("index");
 });
-app.use("/Socket", gameSocket);
+
+// app.use("/Socket", gameSocket);
 
 module.exports = app;

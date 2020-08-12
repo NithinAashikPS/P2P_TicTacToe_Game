@@ -1,6 +1,6 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 (function (global){
-global.socket = io("http://192.168.42.146:4444");
+global.socket = io("/");
 
 function init(data) {
     socket.emit("init", data);
@@ -46,7 +46,7 @@ function placeMark(mark, location) {
         //console.log('game over')
         playing = false;
         
-        $('#modal-text').html("<p>You two players not won the game.</p><p>Your betting amount is safe now.</p>");
+        $('#modal-text').html('<p class="winner">You two players not won the game.</p><p>Your betting amount is safe now.</p>');
         $('.overlay').fadeIn();
         $('body').addClass('overlay-on');
       }
