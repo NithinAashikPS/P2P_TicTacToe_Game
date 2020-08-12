@@ -19,6 +19,7 @@ var winPatterns = [
 
 socket.on("win", (data) => {
   $('.yourTurn').hide();
+  $('.progress').hide();
 });
 
 //update board onscreen and control win logic
