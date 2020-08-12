@@ -35,7 +35,7 @@ function placeMark(mark, location) {
         if (socket_data.u == mark) {
           $('#modal-text').html('<p class="winner">You won the Game</p><p>You earned 20 rupees</p>');
         } else {
-          $('#modal-text').html('<p class="winner">You failde the Game</p><p>You lost 10 rupees</p>');
+          $('#modal-text').html('<p class="winner">You loss the Game</p><p>You lost 10 rupees</p>');
         }
 
         socket.emit("set_win", socket_data);

@@ -219,3 +219,108 @@ button:hover {
 p {
   margin: 5px;
 }
+
+.progress{
+  background: #262626;
+  border-radius: 20px;
+  height: 15px;
+  position: absolute;
+  bottom: 10px;
+  width: 70%;
+  left: 15%;
+}
+
+.progressstyle{
+  background: linear-gradient(to right, #00b360 35%,#ffb036 68%);
+  border-radius: 20px;
+  height: 15px;
+  overflow: visible;
+}
+
+@media only screen and (max-width: 450px) {
+
+  p {
+    font-size: medium;
+  }
+
+  .modal, .alert {
+    padding: 8px;
+    width: 250px;
+  }
+
+  .winner {
+    font-size: 130%;
+  }
+
+  .progress{
+    width: 70%;
+    left: 15%;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  p {
+    font-size: medium;
+  }
+
+  .modal, .alert {
+    padding: 8px;
+    width: 230px;
+  }
+
+  .winner {
+    font-size: 130%;
+  }
+
+  .progress{
+    width: 70%;
+    left: 15%;
+  }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+  p {
+    font-size: medium;
+  }
+
+  .modal, .alert {
+    padding: 8px;
+    width: 230px;
+  }
+
+  .winner {
+    font-size: 130%;
+  }
+
+  .progress{
+    width: 70%;
+    left: 15%;
+  }
+
+}
+
+@media only screen and (max-width: 300px) {
+
+  p {
+    font-size: small;
+  }
+
+  .modal, .alert {
+    padding: 5px;
+    width: 200px;
+  }
+
+  .winner {
+    font-size: 125%;
+  }
+
+  .progress{
+    width: 70%;
+    left: 15%;
+  }
+
+}
