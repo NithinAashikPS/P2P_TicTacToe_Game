@@ -1,0 +1,20 @@
+{
+  "name": "tictactoemain",
+  "version": "1.0.0",
+  "description": "p2p multiplayer tic tac toe",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "browserify ./public/scripts/socket_game.js -o ./public/scripts/socket_bundled.js",
+    "start": "npm run bundle & node server.js"
+  },
+  "author": "Nithin Aashik PS",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.5.2",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.3.0"
+  }
+}
