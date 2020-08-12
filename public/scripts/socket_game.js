@@ -1,4 +1,4 @@
-global.socket = io("http://192.168.42.146:4444");
+global.socket = io("http://localhost:4444");
 
 function init(data) {
     socket.emit("init", data);
